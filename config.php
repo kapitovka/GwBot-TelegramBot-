@@ -3,7 +3,7 @@ date_default_timezone_set("UTC"); // Настройка часовой зоны.
 /**
  * Telegram Bot access token и URL.
  */
-$access_token = '208935857:AAGLYljYEQvzNmM71jegfXs4z9RvkMsSYsc';//*:*****
+$access_token = '*:*';//*:*****
 $api = 'https://api.telegram.org/bot' . $access_token;
 /**
 * Данные для доступа в Базу Данных Mysqli.Information for login to Mysqli Data Base.
