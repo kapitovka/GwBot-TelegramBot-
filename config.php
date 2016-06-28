@@ -65,7 +65,7 @@ if(!is_null($result)){
 
     mysqli_query($link, "UPDATE `$dbTableName` SET `command` = `command` + 1 WHERE (chat_id='$chat_id')");// Обновление записи о пользователе.
     
-} else { mysqli_query( $link, "INSERT INTO `log`(`id`, `first_name`, `chat_id`, `command`, `delivery`, `time_zone`) VALUES ('id','$first_name','$chat_id','1','0','0')"); }// Создание записи о пользователе в БД. 
+} else { mysqli_query( $link, "INSERT INTO `$dbTableName`(`id`, `first_name`, `chat_id`, `command`, `delivery`, `time_zone`) VALUES ('id','$first_name','$chat_id','1','0','0')"); }// Создание записи о пользователе в БД. 
     
 mysqli_close($link);
 }
